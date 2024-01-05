@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\ProduitChercher\**" />
+    <Content Remove="wwwroot\ProduitChercher\**" />
+    <EmbeddedResource Remove="wwwroot\ProduitChercher\**" />
+    <None Remove="wwwroot\ProduitChercher\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\Categories\.vscode\settings.json" />
+    <Content Include="wwwroot\ProfileClient\.vscode\settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Accueil\css\.DS_Store" />
+    <None Include="wwwroot\Accueil\js\.DS_Store" />
+    <None Include="wwwroot\Categories\js\adding-to-cart-feature.js" />
+    <None Include="wwwroot\Categories\js\additional-dynamic-attribution.js" />
+    <None Include="wwwroot\Categories\js\additional-pages-linking.js" />
+    <None Include="wwwroot\Categories\js\additional-sending-feature.js" />
+    <None Include="wwwroot\Categories\js\additional-themes-switch.js" />
+    <None Include="wwwroot\Categories\js\additional.js" />
+    <None Include="wwwroot\Categories\js\amazon.js" />
+    <None Include="wwwroot\Categories\js\app.js" />
+    <None Include="wwwroot\Categories\js\cart.js" />
+    <None Include="wwwroot\Categories\js\categories.js" />
+    <None Include="wwwroot\Categories\js\products-in-cart.js" />
+    <None Include="wwwroot\Categories\js\products.js" />
+    <None Include="wwwroot\DetailsProduit\scripts\productdetailsScript.js" />
+    <None Include="wwwroot\DetailsProduit\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\DetailsProduit\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\DetailsProduit\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\DetailsProduit\webfonts\fa-v4compatibility.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Categories\produit\" />
+    <Folder Include="wwwroot\ImagesProduits\" />
+  </ItemGroup>
+
+</Project>
